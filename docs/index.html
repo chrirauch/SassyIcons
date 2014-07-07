@@ -36,23 +36,6 @@
       
         
           
-        
-      
-    
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
           
         
       
@@ -60,9 +43,33 @@
       
         
           
+          
         
       
         
+          
+          
+        
+      
+        
+          
+          
+        
+      
+        
+          
+          
+        
+      
+    
+      
+        
+          
+          
+        
+      
+        
+          
           
         
       
@@ -92,7 +99,7 @@
     <header class="sassdoc__header">
   <div class="container">
     <h1 class="sassdoc__title">SassyIcons - v0.0.10</h1>
-    <p class="sassdoc__count">6 items documented</p>
+    <p class="sassdoc__count">13 items documented</p>
   </div>
 </header>
 
@@ -158,32 +165,16 @@
         
         
 
-      
-      
-    
+          
+          
+          
+          
+          <li>
+            <a href="#variable-icons-spritemaps">icons-spritemaps</a> 
+            <span class="annotation">private</span>
+            
+          </li>
 
-      
-      
-
-      
-      
-
-        
-        
-
-      
-
-        
-        
-
-      
-
-        
-        
-
-      
-
-        
         
 
       
@@ -199,11 +190,80 @@
         
         
 
+          
+          
+            <li class="sassdoc__map-section"><a href="#function">Functions</a></li>
+            
+          
+          
+          
+          <li>
+            <a href="#function-conf">conf</a> 
+            <span class="annotation">private</span>
+            
+          </li>
+
+        
+
       
 
         
         
 
+          
+          
+          
+          
+          <li>
+            <a href="#function-_join">_join</a> 
+            <span class="annotation">private</span>
+            
+          </li>
+
+        
+
+      
+
+        
+        
+
+          
+          
+          
+          
+          <li>
+            <a href="#function-_sprite-map-get">_sprite-map-get</a> 
+            <span class="annotation">private</span>
+            
+          </li>
+
+        
+
+      
+
+        
+        
+
+          
+          
+          
+          
+          <li>
+            <a href="#function-_sprite-position">_sprite-position</a> 
+            <span class="annotation">private</span>
+            
+          </li>
+
+        
+
+      
+      
+    
+
+      
+      
+
+      
       
 
         
@@ -213,6 +273,40 @@
           
             <li class="sassdoc__map-section"><a href="#mixin">Mixins</a></li>
             
+          
+          
+          
+          <li>
+            <a href="#mixin-hidpi-mq">hidpi-mq</a> 
+            <span class="annotation">private</span>
+            
+          </li>
+
+        
+
+      
+
+        
+        
+
+          
+          
+          
+          
+          <li>
+            <a href="#mixin-generated">generated</a> 
+            <span class="annotation">private</span>
+            
+          </li>
+
+        
+
+      
+
+        
+        
+
+          
           
           
           
@@ -497,6 +591,82 @@
         
         
 
+          
+          
+        
+          
+          
+          
+          <section class="sassdoc__item" id="variable-icons-spritemaps">
+            <h2 class="sassdoc__item-name">
+  <a class="sassdoc__item-anchor" href="#variable-icons-spritemaps">#</a>
+
+  
+    <span class="sassdoc__item-access">[private]</span>
+  
+
+  <code>icons-spritemaps</code>
+
+  
+
+  
+
+  
+</h2>
+
+
+
+<pre class="sassdoc__item-code  language-scss"><code>$icons-spritemaps: ();</code></pre>
+
+  
+
+  
+  <h3>Description</h3>
+  
+  <p class="sassdoc__item-description"><p>Spritemaps storage.</p></p>
+
+
+  
+  <h3>Type</h3>
+
+  <p>
+  
+    <code>Map</code>
+  
+  </p>
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  	
+
+  
+
+  
+
+  
+  <h3>Found at</h3>
+
+  <p><code>stylesheets/icons/_sprite-map-create.scss</code></p>
+
+
+
+
+          </section>
+
+        
+
       
 
     
@@ -510,19 +680,764 @@
         
         
 
+          
+          
+            <h1 class="sassdoc__section" id="function">Functions</h1>
+            
+          
+        
+          
+          
+          
+          <section class="sassdoc__item" id="function-conf">
+            <h2 class="sassdoc__item-name">
+  <a class="sassdoc__item-anchor" href="#function-conf">#</a>
+
+  
+    <span class="sassdoc__item-access">[private]</span>
+  
+
+  <code>conf</code>
+
+  
+
+  
+
+  
+</h2>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+<pre class="sassdoc__item-code  language-scss"><code>@function conf ($name) { ... }</code></pre>
+
+
+
+  
+
+  
+  <h3>Description</h3>
+  
+  <p class="sassdoc__item-description"><p>Retrieve a configuration item.</p></p>
+
+
+  <h3>Parameters</h3>
+
+
+
+  <table class="sassdoc__item-parameters">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$name</code></td>
+          <td data-label="desc"><p>configuration item key</p></td>
+          <td data-label="type">
+          
+            <code>String</code>
+          
+          </td>
+          <td data-label="default">&mdash;</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+  <h3>Returns</h3>
+  <p class="sassdoc__item-description">
+  
+    Any
+  
+  </p>
+
+
+  
+
+  
+
+  
+
+
+
+
+
+
+  
+
+
+
+  
+  
+    
+      
+      <h3>Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><a href="#mixin-icon-generated"><code>icon-generated</code></a></li>
+  
+
+
+
+  
+  
+    
+
+    <li><a href="#mixin-icon-single"><code>icon-single</code></a></li>
+  
+
+
+
+  
+  
+    
+
+    <li><a href="#mixin-icon"><code>icon</code></a></li>
+  
+
+
+
+  
+  
+    
+
+    <li><a href="#mixin-sprite-map-create"><code>sprite-map-create</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  	
+
+  
+
+  
+
+  
+  <h3>Found at</h3>
+
+  <p><code>stylesheets/config/_config.scss</code></p>
+
+
+
+
+          </section>
+
+        
+
       
 
         
         
 
+          
+          
+        
+          
+          
+          
+          <section class="sassdoc__item" id="function-_join">
+            <h2 class="sassdoc__item-name">
+  <a class="sassdoc__item-anchor" href="#function-_join">#</a>
+
+  
+    <span class="sassdoc__item-access">[private]</span>
+  
+
+  <code>_join</code>
+
+  
+
+  
+
+  
+</h2>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+<pre class="sassdoc__item-code  language-scss"><code>@function _join ($list, $glue: &#39;&#39;) { ... }</code></pre>
+
+
+
+  
+
+  
+  <h3>Description</h3>
+  
+  <p class="sassdoc__item-description"><p>Helper: join <code>$list</code> into a string.</p></p>
+
+
+  <h3>Parameters</h3>
+
+
+
+  <table class="sassdoc__item-parameters">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$list</code></td>
+          <td data-label="desc"><p>the list to convert</p></td>
+          <td data-label="type">
+          
+            <code>List</code>
+          
+          </td>
+          <td data-label="default">&mdash;</td>
+        </tr>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$glue</code></td>
+          <td data-label="desc"><p>a string to separate each element of the list</p></td>
+          <td data-label="type">
+          
+            <code>String</code>
+          
+          </td>
+          <td data-label="default">''</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+  <h3>Returns</h3>
+  <p class="sassdoc__item-description">
+  
+    <code>String</code>
+  
+  </p>
+
+
+  
+
+  
+
+  
+
+
+
+
+
+
+  
+
+
+
+  
+  
+    
+      
+      <h3>Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><a href="#mixin-icon-single"><code>icon-single</code></a></li>
+  
+
+
+
+  
+  
+    
+
+    <li><a href="#mixin-icon"><code>icon</code></a></li>
+  
+
+
+
+  
+  
+    
+
+    <li><a href="#mixin-sprite-map-create"><code>sprite-map-create</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  	
+
+  
+
+  
+
+  
+  <h3>Found at</h3>
+
+  <p><code>stylesheets/helpers/_helpers.scss</code></p>
+
+
+
+
+          </section>
+
+        
+
       
 
         
         
 
+          
+          
+        
+          
+          
+          
+          <section class="sassdoc__item" id="function-_sprite-map-get">
+            <h2 class="sassdoc__item-name">
+  <a class="sassdoc__item-anchor" href="#function-_sprite-map-get">#</a>
+
+  
+    <span class="sassdoc__item-access">[private]</span>
+  
+
+  <code>_sprite-map-get</code>
+
+  
+
+  
+
+  
+</h2>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+<pre class="sassdoc__item-code  language-scss"><code>@function _sprite-map-get ($name, $factor: 1x) { ... }</code></pre>
+
+
+
+  
+
+  
+  <h3>Description</h3>
+  
+  <p class="sassdoc__item-description"><p>Helper: retrieve a spritemap.</p></p>
+
+
+  <h3>Parameters</h3>
+
+
+
+  <table class="sassdoc__item-parameters">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$name</code></td>
+          <td data-label="desc"><p>spritemap name</p></td>
+          <td data-label="type">
+          
+            <code>String</code>
+          
+          </td>
+          <td data-label="default">&mdash;</td>
+        </tr>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$factor</code></td>
+          <td data-label="desc"><p>dpi factor</p></td>
+          <td data-label="type">
+          
+            <code>String</code>
+          
+          </td>
+          <td data-label="default">1x</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+  <h3>Returns</h3>
+  <p class="sassdoc__item-description">
+  
+    <code>Spritemap</code>
+  
+  </p>
+
+
+  
+
+  
+
+  
+
+
+
+
+
+
+  
+
+
+
+  
+  
+    
+      
+      <h3>Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><a href="#mixin-icon-generated"><code>icon-generated</code></a></li>
+  
+
+
+
+  
+  
+    
+
+    <li><a href="#mixin-icon"><code>icon</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  	
+
+  
+
+  
+
+  
+  <h3>Found at</h3>
+
+  <p><code>stylesheets/helpers/_helpers.scss</code></p>
+
+
+
+
+          </section>
+
+        
+
       
 
         
+        
+
+          
+          
+        
+          
+          
+          
+          <section class="sassdoc__item" id="function-_sprite-position">
+            <h2 class="sassdoc__item-name">
+  <a class="sassdoc__item-anchor" href="#function-_sprite-position">#</a>
+
+  
+    <span class="sassdoc__item-access">[private]</span>
+  
+
+  <code>_sprite-position</code>
+
+  
+
+  
+
+  
+</h2>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+<pre class="sassdoc__item-code  language-scss"><code>@function _sprite-position ($map, $sprite, $offset, $offset, $scale: 1) { ... }</code></pre>
+
+
+
+  
+
+  
+  <h3>Description</h3>
+  
+  <p class="sassdoc__item-description"><p>Helper: return correct spritemap <code>background-position</code>.</p></p>
+
+
+  <h3>Parameters</h3>
+
+
+
+  <table class="sassdoc__item-parameters">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$map</code></td>
+          <td data-label="desc"><p>spritemap name</p></td>
+          <td data-label="type">
+          
+            <code>Spritemap</code>
+          
+          </td>
+          <td data-label="default">&mdash;</td>
+        </tr>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$sprite</code></td>
+          <td data-label="desc"><p>sprite name</p></td>
+          <td data-label="type">
+          
+            <code>String</code>
+          
+          </td>
+          <td data-label="default">&mdash;</td>
+        </tr>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$offset</code></td>
+          <td data-label="desc"><p>x (0) - adjustment along the x axis</p></td>
+          <td data-label="type">
+          
+            <code>Number</code>
+          
+          </td>
+          <td data-label="default">&mdash;</td>
+        </tr>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$offset</code></td>
+          <td data-label="desc"><p>y (0) - adjustment along the y axis</p></td>
+          <td data-label="type">
+          
+            <code>Number</code>
+          
+          </td>
+          <td data-label="default">&mdash;</td>
+        </tr>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$scale</code></td>
+          <td data-label="desc"><p>spritemap scale</p></td>
+          <td data-label="type">
+          
+            <code>Number</code>
+          
+          </td>
+          <td data-label="default">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+  <h3>Returns</h3>
+  <p class="sassdoc__item-description">
+  
+    <code>List</code>
+  
+  </p>
+
+
+  
+
+  
+
+  
+
+
+
+
+
+
+  
+
+
+
+  
+  
+    
+      
+      <h3>Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><a href="#mixin-icon"><code>icon</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  	
+
+  
+
+  
+
+  
+  <h3>Found at</h3>
+
+  <p><code>stylesheets/helpers/_helpers.scss</code></p>
+
+
+
+
+          </section>
+
         
 
       
@@ -533,16 +1448,6 @@
       
 
       
-      
-
-        
-        
-
-      
-
-        
-        
-
       
 
         
@@ -552,6 +1457,367 @@
           
             <h1 class="sassdoc__section" id="mixin">Mixins</h1>
             
+          
+        
+          
+          
+          
+          <section class="sassdoc__item" id="mixin-hidpi-mq">
+            <h2 class="sassdoc__item-name">
+  <a class="sassdoc__item-anchor" href="#mixin-hidpi-mq">#</a>
+
+  
+    <span class="sassdoc__item-access">[private]</span>
+  
+
+  <code>hidpi-mq</code>
+
+  
+
+  
+
+  
+</h2>
+
+
+
+
+
+<pre class="sassdoc__item-code  language-scss"><code>@mixin hidpi-mq () { ... }</code></pre>
+
+
+
+  
+
+  
+  <h3>Description</h3>
+  
+  <p class="sassdoc__item-description"><p>Hidpi media query builder.</p></p>
+
+
+  <h3>Parameters</h3>
+
+
+
+  <p>None.</p>
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  	
+
+  
+  <h3>Links</h3>
+
+  <ul class="list-unstyled">
+  
+    <li>
+      <a href="http://bjango.com/articles/min-device-pixel-ratio/">
+        
+          http://bjango.com/articles/min-device-pixel-ratio/
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="http://brettjankord.com/2012/11/28/cross-browser-retinahigh-resolution-media-queries">
+        
+          http://brettjankord.com/2012/11/28/cross-browser-retinahigh-resolution-media-queries
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="http://w3.org/blog/CSS/2012/06/14/unprefix-webkit-device-pixel-ratio">
+        
+          http://w3.org/blog/CSS/2012/06/14/unprefix-webkit-device-pixel-ratio
+        
+      </a>
+    </li>
+  
+  </ul>
+
+
+  
+
+  
+  <h3>Found at</h3>
+
+  <p><code>stylesheets/helpers/_helpers.scss</code></p>
+
+
+
+
+          </section>
+
+        
+
+      
+
+        
+        
+
+          
+          
+        
+          
+          
+          
+          <section class="sassdoc__item" id="mixin-generated">
+            <h2 class="sassdoc__item-name">
+  <a class="sassdoc__item-anchor" href="#mixin-generated">#</a>
+
+  
+    <span class="sassdoc__item-access">[private]</span>
+  
+
+  <code>generated</code>
+
+  
+
+  
+
+  
+</h2>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+<pre class="sassdoc__item-code  language-scss"><code>@mixin generated ($width, $height, $top, $right, $bottom, $left) { ... }</code></pre>
+
+
+
+  
+
+  
+  <h3>Description</h3>
+  
+  <p class="sassdoc__item-description"><p>Boilerplate styles for generated content <code>:before</code> or <code>:after</code>.</p></p>
+
+
+  <h3>Parameters</h3>
+
+
+
+  <table class="sassdoc__item-parameters">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$width</code></td>
+          <td data-label="desc">&mdash;</td>
+          <td data-label="type">
+          
+            <code>Number</code>
+          
+          </td>
+          <td data-label="default">&mdash;</td>
+        </tr>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$height</code></td>
+          <td data-label="desc">&mdash;</td>
+          <td data-label="type">
+          
+            <code>Number</code>
+          
+          </td>
+          <td data-label="default">&mdash;</td>
+        </tr>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$top</code></td>
+          <td data-label="desc">&mdash;</td>
+          <td data-label="type">
+          
+            <code>Number</code>
+          
+          </td>
+          <td data-label="default">&mdash;</td>
+        </tr>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$right</code></td>
+          <td data-label="desc">&mdash;</td>
+          <td data-label="type">
+          
+            <code>Number</code>
+          
+          </td>
+          <td data-label="default">&mdash;</td>
+        </tr>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$bottom</code></td>
+          <td data-label="desc">&mdash;</td>
+          <td data-label="type">
+          
+            <code>Number</code>
+          
+          </td>
+          <td data-label="default">&mdash;</td>
+        </tr>
+      
+        <tr class="sassdoc__item-parameter">
+          <td data-label="name"><code>$left</code></td>
+          <td data-label="desc">&mdash;</td>
+          <td data-label="type">
+          
+            <code>Number</code>
+          
+          </td>
+          <td data-label="default">&mdash;</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+  
+
+
+
+  
+  
+    
+      
+      <h3>Used by</h3>
+      <ul class="list-unstyled">
+    
+
+    <li><a href="#mixin-icon-generated"><code>icon-generated</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  	
+
+  
+
+  
+
+  
+  <h3>Found at</h3>
+
+  <p><code>stylesheets/icons/_generated.scss</code></p>
+
+
+
+
+          </section>
+
+        
+
+      
+
+        
+        
+
+          
           
         
           
@@ -729,22 +1995,34 @@
 
 
   
+    
+      
+      <h3>Requires</h3>
+      <ul class="list-unstyled">
+    
 
-
-
-  
-
-
-
+    <li><a href="#function-conf"><code>conf</code></a></li>
   
 
 
 
   
     
-      
-      <h3>Requires</h3>
-      <ul class="list-unstyled">
+
+    <li><a href="#function-_sprite-map-get"><code>_sprite-map-get</code></a></li>
+  
+
+
+
+  
+    
+
+    <li><a href="#mixin-generated"><code>generated</code></a></li>
+  
+
+
+
+  
     
 
     <li><a href="#mixin-icon"><code>icon</code></a></li>
@@ -919,13 +2197,27 @@
 
 
   
+    
+      
+      <h3>Requires</h3>
+      <ul class="list-unstyled">
+    
 
-
-
+    <li><a href="#function-conf"><code>conf</code></a></li>
   
 
 
 
+  
+    
+
+    <li><a href="#function-_join"><code>_join</code></a></li>
+  
+
+
+
+
+</ul>
 
 
 
@@ -1114,21 +2406,43 @@
 
 
   
+    
+      
+      <h3>Requires</h3>
+      <ul class="list-unstyled">
+    
 
-
-
+    <li><a href="#function-conf"><code>conf</code></a></li>
   
 
 
 
   
+    
 
-
-
+    <li><a href="#function-_sprite-map-get"><code>_sprite-map-get</code></a></li>
   
 
 
 
+  
+    
+
+    <li><a href="#function-_join"><code>_join</code></a></li>
+  
+
+
+
+  
+    
+
+    <li><a href="#function-_sprite-position"><code>_sprite-position</code></a></li>
+  
+
+
+
+
+</ul>
 
 
 
@@ -1288,13 +2602,27 @@
 
 
   
+    
+      
+      <h3>Requires</h3>
+      <ul class="list-unstyled">
+    
 
-
-
+    <li><a href="#function-conf"><code>conf</code></a></li>
   
 
 
 
+  
+    
+
+    <li><a href="#function-_join"><code>_join</code></a></li>
+  
+
+
+
+
+</ul>
 
 
 
