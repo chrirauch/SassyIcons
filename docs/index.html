@@ -3,76 +3,6 @@
 
 
 
-
-
-
-
-
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-    
-  
-
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-    
-      
-      
-    
-  
-
-
 <html lang="en">
 <head>
   
@@ -112,103 +42,114 @@
 
     
     
+      <li class="sidebar__item  sidebar__item--heading"><a href="#config">Configuration</a></li>
 
       
       
-
-      
-      
-
-        <li class="sidebar__sub-heading"><a class="sidebar__link" href="#variable">Variables</a></li>
 
         
         
+
+        
+        
+          <li class="sidebar__item  sidebar__item--sub-heading"><a href="#config-variable">variables</a></li>
 
           
-          <li class="sidebar__item  js-sassdoc__item" data-name="icons-defaults" data-type="variable">
-            <a class="sidebar__link" href="#variable-icons-defaults">icons-defaults
-            
-            
-            </a>
-          </li>
-
-        
-
           
-          <li class="sidebar__item  js-sassdoc__item" data-name="icons-settings" data-type="variable">
-            <a class="sidebar__link" href="#variable-icons-settings">icons-settings
-            
-            
+            <li class="sidebar__item  sassdoc__item" data-name="icons-defaults" data-type="variable">
+              <a href="#variable-icons-defaults">icons-defaults
+              
+              
             </a>
           </li>
-
+          
+            <li class="sidebar__item  sassdoc__item" data-name="icons-settings" data-type="variable">
+              <a href="#variable-icons-settings">icons-settings
+              
+              
+            </a>
+          </li>
+          
         
-
       
 
+        
+        
+
+        
+        
+      
     
+      <li class="sidebar__item  sidebar__item--heading"><a href="#icons">Icons API</a></li>
 
       
       
 
-      
+        
+        
+
+        
+        
       
 
+        
+        
+
+        
+        
+          <li class="sidebar__item  sidebar__item--sub-heading"><a href="#icons-mixin">mixins</a></li>
+
+          
+          
+            <li class="sidebar__item  sassdoc__item" data-name="icon-generated" data-type="mixin">
+              <a href="#mixin-icon-generated">icon-generated
+              
+              
+            </a>
+          </li>
+          
+            <li class="sidebar__item  sassdoc__item" data-name="icon-single" data-type="mixin">
+              <a href="#mixin-icon-single">icon-single
+              
+              
+            </a>
+          </li>
+          
+            <li class="sidebar__item  sassdoc__item" data-name="icon" data-type="mixin">
+              <a href="#mixin-icon">icon
+              
+              
+            </a>
+          </li>
+          
+            <li class="sidebar__item  sassdoc__item" data-name="sprite-map-create" data-type="mixin">
+              <a href="#mixin-sprite-map-create">sprite-map-create
+              
+              
+            </a>
+          </li>
+          
+        
+      
     
+      <li class="sidebar__item  sidebar__item--heading"><a href="#helpers">Helpers</a></li>
 
       
       
 
-      
-      
-
-        <li class="sidebar__sub-heading"><a class="sidebar__link" href="#mixin">Mixins</a></li>
-
         
         
 
-          
-          <li class="sidebar__item  js-sassdoc__item" data-name="icon-generated" data-type="mixin">
-            <a class="sidebar__link" href="#mixin-icon-generated">icon-generated
-            
-            
-            </a>
-          </li>
-
         
-
-          
-          <li class="sidebar__item  js-sassdoc__item" data-name="icon-single" data-type="mixin">
-            <a class="sidebar__link" href="#mixin-icon-single">icon-single
-            
-            
-            </a>
-          </li>
-
         
-
-          
-          <li class="sidebar__item  js-sassdoc__item" data-name="icon" data-type="mixin">
-            <a class="sidebar__link" href="#mixin-icon">icon
-            
-            
-            </a>
-          </li>
-
-        
-
-          
-          <li class="sidebar__item  js-sassdoc__item" data-name="sprite-map-create" data-type="mixin">
-            <a class="sidebar__link" href="#mixin-sprite-map-create">sprite-map-create
-            
-            
-            </a>
-          </li>
-
-        
-
       
 
+        
+        
+
+        
+        
+      
     
 
   
@@ -236,6 +177,7 @@
   </div>
 </header>
 
+
     <div class="container">
     
 
@@ -244,28 +186,29 @@
 
     
     
+      <section class="main__section">
+        <h1 class="main__heading" id="config">Configuration</h1>
 
-      
-      
-
-      
-      
-        <section class="main__section">
-          <h1 class="main__heading" id="variable">Variables</h1>
+        
+        
 
           
           
 
-            
-            
-            
-            <section class="main__item  item" id="variable-icons-defaults">
-              <h3 class="item__heading">
+          
+          
+            <section class="main__sub-section" id="config-variable">
+              <h2 class="main__heading--secondary">variables</h2>
+
+              
+              
+                
+                <section class="main__item  item" id="variable-icons-defaults">
+
+<h3 class="item__heading">
   
 
   <a class="item__name" href="#variable-icons-defaults">icons-defaults</a>
-
-  
 
   
 
@@ -274,7 +217,11 @@
 
 
 
-<pre class="item__code  language-scss"><code>$icons-defaults: (
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$icons-defaults: (
 
   // Space around sprites in generated spritemap.
   // Useful with `$offset` parameter.
@@ -309,11 +256,16 @@
 );</code></pre>
 
   
+</div>
+
+  
 
   
   <h3 class="item__sub-heading">Description</h3>
-  
-  <div class="item__description"><p>Default settings.</p></div>
+
+  <div class="item__description"><p>Default settings.</p>
+</div>
+
 
 
   
@@ -334,6 +286,8 @@
 
   
 
+  
+
 
 
 
@@ -342,32 +296,28 @@
   
 
 
+  
 
 
 
-  	
+
+
+  
+
 
   
 
   
 
-  
-  <h3 class="item__sub-heading">Found at</h3>
-
-  <p><code>stylesheets/stylesheets/config/_config.scss</code></p>
 
 
 
+</section>
+              
+                
+                <section class="main__item  item" id="variable-icons-settings">
 
-            </section>
-
-          
-
-            
-            
-            
-            <section class="main__item  item" id="variable-icons-settings">
-              <h3 class="item__heading">
+<h3 class="item__heading">
   
 
   <a class="item__name" href="#variable-icons-settings">icons-settings</a>
@@ -375,20 +325,28 @@
   
 
   
-
-  
 </h3>
 
 
 
-<pre class="item__code  language-scss"><code>$icons-settings: () !default;</code></pre>
+
+
+
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>$icons-settings: () !default;</code></pre>
+
+  
+</div>
 
   
 
   
   <h3 class="item__sub-heading">Description</h3>
-  
-  <div class="item__description"><p>User settings.</p></div>
+
+  <div class="item__description"><p>User settings.
+Instanciate the same object in your stylesheets to override defaults.</p>
+</div>
+
 
 
   
@@ -408,6 +366,17 @@
 
 
   
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+    <pre class="item__example"><code class="language-scss Override defaults">  $icons-settings: (
+    dir: &quot;assets&quot;,
+    hidpi-scale: 3
+  );</code></pre>
+  
+
+
+  
 
 
 
@@ -417,61 +386,67 @@
   
 
 
+  
 
 
 
-  	
+
+
+  
+
 
   
 
   
 
-  
-  <h3 class="item__sub-heading">Found at</h3>
-
-  <p><code>stylesheets/stylesheets/config/_config.scss</code></p>
 
 
 
-
+</section>
+              
             </section>
+          
+        
 
           
-        </section>
+          
 
-      
+          
+          
+        
 
+      </section>
     
+      <section class="main__section">
+        <h1 class="main__heading" id="icons">Icons API</h1>
 
-      
-      
-
-      
-      
-
-    
-
-      
-      
-
-      
-      
-        <section class="main__section">
-          <h1 class="main__heading" id="mixin">Mixins</h1>
+        
+        
 
           
           
 
-            
-            
-            
-            <section class="main__item  item" id="mixin-icon-generated">
-              <h3 class="item__heading">
+          
+          
+        
+
+          
+          
+
+          
+          
+            <section class="main__sub-section" id="icons-mixin">
+              <h2 class="main__heading--secondary">mixins</h2>
+
+              
+              
+                
+                <section class="main__item  item" id="mixin-icon-generated">
+
+<h3 class="item__heading">
   
 
   <a class="item__name" href="#mixin-icon-generated">icon-generated</a>
-
-  
 
   
 
@@ -482,6 +457,9 @@
 
 
 
+
+
+
   
 
   
@@ -538,16 +516,23 @@
     
   
 
-<pre class="item__code  language-scss"><code>@mixin icon-generated($map, $sprite, $pos: &#39;before&#39;, $centered: false, $format: conf(format)) { ... }</code></pre>
 
-
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>@mixin icon-generated($map, $sprite, $pos: &#39;before&#39;, $centered: false, $format: conf(format)) { ... }</code></pre>
 
   
-  
+</div>
+
+
+
   
   <h3 class="item__sub-heading">Description</h3>
-  
-  <div class="item__description"><p>Include the icon in a generated pseudo-element.<br>Default to <code>:before</code>.<br>Allows for easier positioning or centering.</p></div>
+
+  <div class="item__description"><p>Include the icon in a generated pseudo-element.
+Default to <code>:before</code>.
+Allows for easier positioning or centering.</p>
+</div>
+
 
 
   <h3 class="item__sub-heading">Parameters</h3>
@@ -567,7 +552,8 @@
       
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$map</code></th>
-          <td data-label="desc"><p>spritemap name</p></td>
+          <td data-label="desc"><p>spritemap name</p>
+</td>
           <td data-label="type">
           
             String
@@ -582,7 +568,8 @@
       
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$sprite</code></th>
-          <td data-label="desc"><p>sprite name</p></td>
+          <td data-label="desc"><p>sprite name</p>
+</td>
           <td data-label="type">
           
             String
@@ -597,7 +584,8 @@
       
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$pos</code></th>
-          <td data-label="desc"><p>pseudo-element position</p></td>
+          <td data-label="desc"><p>pseudo-element position</p>
+</td>
           <td data-label="type">
           
             String
@@ -612,7 +600,8 @@
       
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$centered</code></th>
-          <td data-label="desc"><p>whether to center the icon, relative to its parent</p></td>
+          <td data-label="desc"><p>whether to center the icon, relative to its parent</p>
+</td>
           <td data-label="type">
           
             Bool
@@ -627,7 +616,8 @@
       
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$format</code></th>
-          <td data-label="desc"><p>file format &#39;svg&#39; | &#39;png&#39;</p></td>
+          <td data-label="desc"><p>file format &#39;svg&#39; | &#39;png&#39;</p>
+</td>
           <td data-label="type">
           
             String
@@ -645,21 +635,16 @@
 
 
 
-  
-
-  
-
-  
 
   
 
 
   
 
+  
 
 
   
-
 
 
   
@@ -667,21 +652,10 @@
 
 
   
-    
-      
-      <h3 class="item__sub-heading">Requires</h3>
-      <ul class="list-unstyled">
-    
 
-    
-      <li><a href="#mixin-icon"><code>icon</code></a>  <div class="item__requires-description"></div></li>
-    
+
+
   
-
-
-
-
-</ul>
 
 
 
@@ -698,34 +672,35 @@
 
 
 
-  	
+
+  
+
+
+  
+
+
+
+
+
+  
+
 
   
 
   
 
-  
-  <h3 class="item__sub-heading">Found at</h3>
-
-  <p><code>stylesheets/stylesheets/icons/_icon-generated.scss</code></p>
 
 
 
+</section>
+              
+                
+                <section class="main__item  item" id="mixin-icon-single">
 
-            </section>
-
-          
-
-            
-            
-            
-            <section class="main__item  item" id="mixin-icon-single">
-              <h3 class="item__heading">
+<h3 class="item__heading">
   
 
   <a class="item__name" href="#mixin-icon-single">icon-single</a>
-
-  
 
   
 
@@ -736,6 +711,9 @@
 
 
 
+
+
+
   
 
   
@@ -768,16 +746,22 @@
     
   
 
-<pre class="item__code  language-scss"><code>@mixin icon-single($map, $sprite, $format: conf(format)) { ... }</code></pre>
 
-
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>@mixin icon-single($map, $sprite, $format: conf(format)) { ... }</code></pre>
 
   
-  
+</div>
+
+
+
   
   <h3 class="item__sub-heading">Description</h3>
-  
-  <div class="item__description"><p>Embed a single icon as inline-image (no spritemap).<br>Should be used sporadically.</p></div>
+
+  <div class="item__description"><p>Embed a single icon as inline-image (no spritemap).
+Should be used sporadically.</p>
+</div>
+
 
 
   <h3 class="item__sub-heading">Parameters</h3>
@@ -797,7 +781,8 @@
       
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$map</code></th>
-          <td data-label="desc"><p>spritemap name</p></td>
+          <td data-label="desc"><p>spritemap name</p>
+</td>
           <td data-label="type">
           
             String
@@ -812,7 +797,8 @@
       
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$sprite</code></th>
-          <td data-label="desc"><p>sprite name</p></td>
+          <td data-label="desc"><p>sprite name</p>
+</td>
           <td data-label="type">
           
             String
@@ -827,7 +813,8 @@
       
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$format</code></th>
-          <td data-label="desc"><p>file format &#39;svg&#39; | &#39;png&#39;</p></td>
+          <td data-label="desc"><p>file format &#39;svg&#39; | &#39;png&#39;</p>
+</td>
           <td data-label="type">
           
             String
@@ -845,23 +832,19 @@
 
 
 
-  
-
-  
-
-  
 
   
 
 
   
 
+  
 
 
   
 
 
-
+  
 
 
 
@@ -878,34 +861,35 @@
 
 
 
-  	
+
+  
+
+
+  
+
+
+
+
+
+  
+
 
   
 
   
 
-  
-  <h3 class="item__sub-heading">Found at</h3>
-
-  <p><code>stylesheets/stylesheets/icons/_icon-single.scss</code></p>
 
 
 
+</section>
+              
+                
+                <section class="main__item  item" id="mixin-icon">
 
-            </section>
-
-          
-
-            
-            
-            
-            <section class="main__item  item" id="mixin-icon">
-              <h3 class="item__heading">
+<h3 class="item__heading">
   
 
   <a class="item__name" href="#mixin-icon">icon</a>
-
-  
 
   
 
@@ -916,6 +900,9 @@
 
 
 
+
+
+
   
 
   
@@ -960,16 +947,22 @@
     
   
 
-<pre class="item__code  language-scss"><code>@mixin icon($map, $sprite, $offset: 0 0, $format: conf(format)) { ... }</code></pre>
 
-
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>@mixin icon($map, $sprite, $offset: (0 0), $format: conf(format)) { ... }</code></pre>
 
   
-  
+</div>
+
+
+
   
   <h3 class="item__sub-heading">Description</h3>
-  
-  <div class="item__description"><p>Main icon mixin,<br>default choice unless there are specific needs.</p></div>
+
+  <div class="item__description"><p>Main icon mixin,
+default choice unless there are specific needs.</p>
+</div>
+
 
 
   <h3 class="item__sub-heading">Parameters</h3>
@@ -989,7 +982,8 @@
       
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$map</code></th>
-          <td data-label="desc"><p>spritemap name</p></td>
+          <td data-label="desc"><p>spritemap name</p>
+</td>
           <td data-label="type">
           
             String
@@ -1004,7 +998,8 @@
       
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$sprite</code></th>
-          <td data-label="desc"><p>sprite name</p></td>
+          <td data-label="desc"><p>sprite name</p>
+</td>
           <td data-label="type">
           
             String
@@ -1019,7 +1014,8 @@
       
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$offset</code></th>
-          <td data-label="desc"><p>adjustment along the x y axis</p></td>
+          <td data-label="desc"><p>adjustment along the x y axis</p>
+</td>
           <td data-label="type">
           
             List
@@ -1027,14 +1023,15 @@
           </td>
           <td data-label="default">
           
-            <code>0 0</code>
+            <code>(0 0)</code>
           
           </td>
         </tr>
       
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$format</code></th>
-          <td data-label="desc"><p>file format &#39;svg&#39; | &#39;png&#39;</p></td>
+          <td data-label="desc"><p>file format &#39;svg&#39; | &#39;png&#39;</p>
+</td>
           <td data-label="type">
           
             String
@@ -1052,31 +1049,27 @@
 
 
 
-  
-
-  
-
-  
 
   
 
 
   
+  <h3 class="item__sub-heading">Example</h3>
 
+  
+    <pre class="item__example"><code class="language-scss Include an icon">  .twitter {
+    @include icon(social, twitter);
+  }</code></pre>
+  
 
 
   
 
 
-
   
 
 
-
   
-
-
-
 
 
 
@@ -1085,11 +1078,26 @@
 
 
   
+
+
+
   
+
+
+
+
+
+
+  
+
+
+
+  
+
     
       
       <h3 class="item__sub-heading">Used by</h3>
-      <ul class="list-unstyled">
+      <ul class="list-unstyled  list-inline">
     
 
     <li><a href="#mixin-icon-generated"><code>icon-generated</code></a></li>
@@ -1105,37 +1113,31 @@
   
 
 
+  
 
 
 
-  	
+
+
+  
+
 
   
 
   
 
-  
-  <h3 class="item__sub-heading">Found at</h3>
-
-  <p><code>stylesheets/stylesheets/icons/_icon.scss</code></p>
 
 
 
+</section>
+              
+                
+                <section class="main__item  item" id="mixin-sprite-map-create">
 
-            </section>
-
-          
-
-            
-            
-            
-            <section class="main__item  item" id="mixin-sprite-map-create">
-              <h3 class="item__heading">
+<h3 class="item__heading">
   
 
   <a class="item__name" href="#mixin-sprite-map-create">sprite-map-create</a>
-
-  
 
   
 
@@ -1146,6 +1148,9 @@
 
 
 
+
+
+
   
 
   
@@ -1168,16 +1173,21 @@
     
   
 
-<pre class="item__code  language-scss"><code>@mixin sprite-map-create($name, $spacing: conf(spacing)) { ... }</code></pre>
 
-
+<div class="relative  clear">
+  <pre class="item__code  language-scss"><code>@mixin sprite-map-create($name, $spacing: conf(spacing)) { ... }</code></pre>
 
   
-  
+</div>
+
+
+
   
   <h3 class="item__sub-heading">Description</h3>
-  
-  <div class="item__description"><p>Create a new spritemap from folder.</p></div>
+
+  <div class="item__description"><p>Create a new spritemap from folder.</p>
+</div>
+
 
 
   <h3 class="item__sub-heading">Parameters</h3>
@@ -1197,7 +1207,8 @@
       
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$name</code></th>
-          <td data-label="desc"><p>spritemap name, which is also the folder name</p></td>
+          <td data-label="desc"><p>spritemap name, which is also the folder name</p>
+</td>
           <td data-label="type">
           
             String
@@ -1212,7 +1223,8 @@
       
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$spacing</code></th>
-          <td data-label="desc"><p>Whether to add space around sprites in generated spritemap</p></td>
+          <td data-label="desc"><p>Whether to add space around sprites in generated spritemap</p>
+</td>
           <td data-label="type">
           
             Number
@@ -1230,30 +1242,25 @@
 
 
 
-  
-
-  
-
-  
 
   
 
 
   
+  <h3 class="item__sub-heading">Example</h3>
 
+  
+    <pre class="item__example"><code class="language-scss Instantiate a new sprite map">  @include sprite-map-create(social, $spacing: 30px);</code></pre>
+  
 
 
   
 
 
-
-
-
-
   
 
 
-
+  
 
 
 
@@ -1263,27 +1270,62 @@
 
 
 
-  	
+
+  
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  
+
 
   
 
   
 
-  
-  <h3 class="item__sub-heading">Found at</h3>
-
-  <p><code>stylesheets/stylesheets/icons/_sprite-map-create.scss</code></p>
 
 
 
-
+</section>
+              
             </section>
+          
+        
+
+      </section>
+    
+      <section class="main__section">
+        <h1 class="main__heading" id="helpers">Helpers</h1>
+
+        
+        
 
           
-        </section>
+          
 
-      
+          
+          
+        
 
+          
+          
+
+          
+          
+        
+
+      </section>
     
 
   
