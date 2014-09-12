@@ -37,17 +37,18 @@
 
     
     
-      <p class="sidebar__item  sidebar__item--heading"><a href="#config">Configuration</a></p>
+      <p class="sidebar__item  sidebar__item--heading" data-slug="config"><a href="#config">Configuration</a></p>
 
       
       
+        <div>
 
         
         
 
         
         
-          <p class="sidebar__item  sidebar__item--sub-heading"><a href="#config-variable">variables</a></p>
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="config-variable"><a href="#config-variable">variables</a></p>
 
           
           
@@ -70,33 +71,40 @@
             </ul>
           
         
+        
       
+        
 
         
         
 
         
         
+        </div>
       
+
     
-      <p class="sidebar__item  sidebar__item--heading"><a href="#icons">Icons API</a></p>
+      <p class="sidebar__item  sidebar__item--heading" data-slug="icons"><a href="#icons">Icons API</a></p>
 
       
       
+        <div>
 
         
         
 
+        
         
         
       
-
-        
         
 
         
         
-          <p class="sidebar__item  sidebar__item--sub-heading"><a href="#icons-mixin">mixins</a></p>
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="icons-mixin"><a href="#icons-mixin">mixins</a></p>
 
           
           
@@ -119,8 +127,8 @@
             
           
             
-            <li class="sidebar__item  sassdoc__item" data-name="icon" data-type="mixin">
-              <a href="#mixin-icon">icon
+            <li class="sidebar__item  sassdoc__item" data-name="sprite-map-create" data-type="mixin">
+              <a href="#mixin-sprite-map-create">sprite-map-create
               
               
               </a>
@@ -128,8 +136,8 @@
             
           
             
-            <li class="sidebar__item  sassdoc__item" data-name="sprite-map-create" data-type="mixin">
-              <a href="#mixin-sprite-map-create">sprite-map-create
+            <li class="sidebar__item  sassdoc__item" data-name="icon" data-type="mixin">
+              <a href="#mixin-icon">icon
               
               
               </a>
@@ -137,26 +145,33 @@
             </ul>
           
         
+        </div>
       
+
     
-      <p class="sidebar__item  sidebar__item--heading"><a href="#helpers">Helpers</a></p>
+      <p class="sidebar__item  sidebar__item--heading" data-slug="helpers"><a href="#helpers">Helpers</a></p>
 
       
       
+        <div>
 
         
         
 
+        
         
         
       
-
-        
         
 
         
         
+
+        
+        
+        </div>
       
+
     
   
 </div>
@@ -461,6 +476,7 @@
   
     
     
+
   
     
     
@@ -593,6 +609,7 @@ Instanciate the same object in your stylesheets to override defaults.</p>
 );</code></pre>
   </div>
   
+
 
   
     
@@ -750,7 +767,9 @@ Instanciate the same object in your stylesheets to override defaults.</p>
 
 
 <div class="relative  clear  code--collapsed">
-  <pre class="item__code  item__code--expanded  language-scss"><code>@mixin icon-generated($map, $sprite, $pos: &#39;before&#39;, $centered: false, $format: conf(format)) { 
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin icon-generated($map, $sprite, $pos: &#39;before&#39;, $centered: false, $format: conf(format)) { 
   position: relative;
 
   &amp;:#{$pos} {
@@ -772,9 +791,8 @@ Instanciate the same object in your stylesheets to override defaults.</p>
 
     @content;
   }
- }</code></pre>
-
-  <pre class="item__code  item__code--collapsed  language-scss"><code>@mixin icon-generated($map, $sprite, $pos: &#39;before&#39;, $centered: false, $format: conf(format)) { ... }</code></pre>
+ }"
+    data-collapsed="@mixin icon-generated($map, $sprite, $pos: &#39;before&#39;, $centered: false, $format: conf(format)) { ... }"><code>@mixin icon-generated($map, $sprite, $pos: &#39;before&#39;, $centered: false, $format: conf(format)) { ... }</code></pre>
 
   
     <a href="https://github.com/pascalduez/SassyIcons/tree/master/stylesheets/icons/_icon-generated.scss" class="item__source-link" target="_blank">View source</a>
@@ -913,6 +931,7 @@ Allows for easier positioning or centering.</p>
   
     
     
+
   
     
     
@@ -1092,7 +1111,9 @@ Allows for easier positioning or centering.</p>
 
 
 <div class="relative  clear  code--collapsed">
-  <pre class="item__code  item__code--expanded  language-scss"><code>@mixin icon-single($map, $sprite, $format: conf(format)) { 
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin icon-single($map, $sprite, $format: conf(format)) { 
 
   // sprite-file() and inline-image() no work.
   // @see https://github.com/chriseppstein/compass/issues/951
@@ -1145,9 +1166,8 @@ Allows for easier positioning or centering.</p>
       }
     }
   }
- }</code></pre>
-
-  <pre class="item__code  item__code--collapsed  language-scss"><code>@mixin icon-single($map, $sprite, $format: conf(format)) { ... }</code></pre>
+ }"
+    data-collapsed="@mixin icon-single($map, $sprite, $format: conf(format)) { ... }"><code>@mixin icon-single($map, $sprite, $format: conf(format)) { ... }</code></pre>
 
   
     <a href="https://github.com/pascalduez/SassyIcons/tree/master/stylesheets/icons/_icon-single.scss" class="item__source-link" target="_blank">View source</a>
@@ -1253,6 +1273,7 @@ Should be used sporadically.</p>
   
     
     
+
   
     
     
@@ -1319,6 +1340,295 @@ Should be used sporadically.</p>
 
 
 
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-sprite-map-create">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-sprite-map-create">sprite-map-create</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin sprite-map-create($name, $spacing: conf(spacing)) { 
+  $sprites-1x: _join((conf(dir), $name, conf(dir-png), &quot;*.png&quot;), &quot;/&quot;);
+  $sprites-2x: _join((conf(dir), $name, conf(dir-hidpi), &quot;*.png&quot;), &quot;/&quot;);
+
+  $map-1x: sprite-map($sprites-1x, $spacing: $spacing);
+  $map-2x: sprite-map($sprites-2x, $spacing: $spacing);
+
+  $new: ($name: (1x: $map-1x, 2x: $map-2x));
+  $icons-spritemaps: map-merge($icons-spritemaps, $new) !global;
+
+  @at-root %sprite-map-#{$name}-image-map {
+    background: {
+      image: $map-1x;
+      repeat: no-repeat;
+    }
+  }
+  @at-root %sprite-map-#{$name}-2x-image-map {
+    @include hidpi-mq {
+      background: {
+        image: $map-2x;
+        size: ceil(image-width(sprite-path($map-2x)) / conf(hidpi-scale)) auto;
+      }
+    }
+  }
+ }"
+    data-collapsed="@mixin sprite-map-create($name, $spacing: conf(spacing)) { ... }"><code>@mixin sprite-map-create($name, $spacing: conf(spacing)) { ... }</code></pre>
+
+  
+    <a href="https://github.com/pascalduez/SassyIcons/tree/master/stylesheets/icons/_sprite-map-create.scss" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Create a new spritemap from folder.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$name</code></th>
+          <td data-label="desc"><p>spritemap name, which is also the folder name</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$spacing</code></th>
+          <td data-label="desc"><p>Whether to add space around sprites in generated spritemap</p>
+</td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            <code>conf(spacing)</code>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>Instantiate a new sprite map</p>
+</div>
+    
+    <pre class="example__code"><code class="language-scss">  @include sprite-map-create(social, $spacing: 30px);</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li>
+        
+          <code>Compass::sprite-map</code>
+        
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li>
+        
+          <code>Compass::sprite-path</code>
+        
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li>
+        
+          <code>Compass::image-width</code>
+        
+        
+      </li>
+    
   
 
 
@@ -1431,7 +1741,9 @@ Should be used sporadically.</p>
 
 
 <div class="relative  clear  code--collapsed">
-  <pre class="item__code  item__code--expanded  language-scss"><code>@mixin icon($map, $sprite, $offset: (0 0), $format: conf(format)) { 
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin icon($map, $sprite, $offset: (0 0), $format: conf(format)) { 
   $map-1x: _sprite-map-get($map);
   $map-2x: _sprite-map-get($map, 2x);
 
@@ -1480,9 +1792,8 @@ Should be used sporadically.</p>
       background-position: _sprite-position($map-2x, $sprite, $offset-x, $offset-y, conf(hidpi-scale));
     }
   }
- }</code></pre>
-
-  <pre class="item__code  item__code--collapsed  language-scss"><code>@mixin icon($map, $sprite, $offset: (0 0), $format: conf(format)) { ... }</code></pre>
+ }"
+    data-collapsed="@mixin icon($map, $sprite, $offset: (0 0), $format: conf(format)) { ... }"><code>@mixin icon($map, $sprite, $offset: (0 0), $format: conf(format)) { ... }</code></pre>
 
   
     <a href="https://github.com/pascalduez/SassyIcons/tree/master/stylesheets/icons/_icon.scss" class="item__source-link" target="_blank">View source</a>
@@ -1618,6 +1929,7 @@ default choice unless there are specific needs.</p>
   </div>
   
 
+
   
     
     
@@ -1721,293 +2033,6 @@ default choice unless there are specific needs.</p>
 
 </section>
               
-                <section class="main__item  item" id="mixin-sprite-map-create">
-
-<h3 class="item__heading">
-  
-
-  <a class="item__name" href="#mixin-sprite-map-create">sprite-map-create</a>
-
-  
-
-  
-</h3>
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-    
-  
-
-  
-
-  
-    
-  
-
-  
-
-  
-    
-  
-
-
-<div class="relative  clear  code--collapsed">
-  <pre class="item__code  item__code--expanded  language-scss"><code>@mixin sprite-map-create($name, $spacing: conf(spacing)) { 
-  $sprites-1x: _join((conf(dir), $name, conf(dir-png), &quot;*.png&quot;), &quot;/&quot;);
-  $sprites-2x: _join((conf(dir), $name, conf(dir-hidpi), &quot;*.png&quot;), &quot;/&quot;);
-
-  $map-1x: sprite-map($sprites-1x, $spacing: $spacing);
-  $map-2x: sprite-map($sprites-2x, $spacing: $spacing);
-
-  $new: ($name: (1x: $map-1x, 2x: $map-2x));
-  $icons-spritemaps: map-merge($icons-spritemaps, $new) !global;
-
-  @at-root %sprite-map-#{$name}-image-map {
-    background: {
-      image: $map-1x;
-      repeat: no-repeat;
-    }
-  }
-  @at-root %sprite-map-#{$name}-2x-image-map {
-    @include hidpi-mq {
-      background: {
-        image: $map-2x;
-        size: ceil(image-width(sprite-path($map-2x)) / conf(hidpi-scale)) auto;
-      }
-    }
-  }
- }</code></pre>
-
-  <pre class="item__code  item__code--collapsed  language-scss"><code>@mixin sprite-map-create($name, $spacing: conf(spacing)) { ... }</code></pre>
-
-  
-    <a href="https://github.com/pascalduez/SassyIcons/tree/master/stylesheets/icons/_sprite-map-create.scss" class="item__source-link" target="_blank">View source</a>
-  
-</div>
-
-
-
-
-
-
-  
-
-  
-  
-    
-  
-
-  
-    
-    
-  <h3 class="item__sub-heading">Description</h3>
-
-  <div class="item__description"><p>Create a new spritemap from folder.</p>
-</div>
-
-
-  
-    
-    <h3 class="item__sub-heading">Parameters</h3>
-
-
-
-  <table class="item__parameters">
-    <thead>
-      <tr>
-        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
-        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
-        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
-        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-        <tr class="item__parameter">
-          <th scope="row" data-label="name"><code>$name</code></th>
-          <td data-label="desc"><p>spritemap name, which is also the folder name</p>
-</td>
-          <td data-label="type">
-          
-            String
-          
-          </td>
-          <td data-label="default">
-          
-            &mdash;<span class="visually-hidden"> none</span>
-          
-          </td>
-        </tr>
-      
-        <tr class="item__parameter">
-          <th scope="row" data-label="name"><code>$spacing</code></th>
-          <td data-label="desc"><p>Whether to add space around sprites in generated spritemap</p>
-</td>
-          <td data-label="type">
-          
-            Number
-          
-          </td>
-          <td data-label="default">
-          
-            <code>conf(spacing)</code>
-          
-          </td>
-        </tr>
-      
-    </tbody>
-  </table>
-
-
-
-  
-    
-    
-
-  
-    
-    
-  <h3 class="item__sub-heading">Example</h3>
-
-  
-  <div class="item__example  example">
-    
-    <div class="example__description"><p>Instantiate a new sprite map</p>
-</div>
-    
-    <pre class="example__code"><code class="language-scss">  @include sprite-map-create(social, $spacing: 30px);</code></pre>
-  </div>
-  
-
-  
-    
-    
-
-  
-    
-    
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-    
-      
-      <h3 class="item__sub-heading">Requires</h3>
-      <ul class="list-unstyled">
-    
-
-    
-      <li>
-        
-          <code>Compass::sprite-map</code>
-        
-        
-      </li>
-    
-  
-
-
-
-  
-    
-
-    
-      <li>
-        
-          <code>Compass::sprite-path</code>
-        
-        
-      </li>
-    
-  
-
-
-
-  
-    
-
-    
-      <li>
-        
-          <code>Compass::image-width</code>
-        
-        
-      </li>
-    
-  
-
-
-
-
-</ul>
-
-
-  
-    
-    
-
-
-
-
-
-  
-    
-    
-
-  
-    
-    
-
-
-
-
-  
-    
-    
-
-  
-    
-    
-  
-    
-    
-
-  
-
-
-
-</section>
-              
             </section>
           
         
@@ -2080,11 +2105,9 @@ default choice unless there are specific needs.</p>
 
 
   
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')</script>
-<script src="assets/js/fuse.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/prism.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="assets/js/main.min.js"></script>
 
 </body>
 </html>
