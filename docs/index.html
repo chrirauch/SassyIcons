@@ -127,8 +127,8 @@
             
           
             
-            <li class="sidebar__item  sassdoc__item" data-name="sprite-map-create" data-type="mixin">
-              <a href="#mixin-sprite-map-create">sprite-map-create
+            <li class="sidebar__item  sassdoc__item" data-name="icon" data-type="mixin">
+              <a href="#mixin-icon">icon
               
               
               </a>
@@ -136,8 +136,8 @@
             
           
             
-            <li class="sidebar__item  sassdoc__item" data-name="icon" data-type="mixin">
-              <a href="#mixin-icon">icon
+            <li class="sidebar__item  sassdoc__item" data-name="sprite-map-create" data-type="mixin">
+              <a href="#mixin-sprite-map-create">sprite-map-create
               
               
               </a>
@@ -1384,295 +1384,6 @@ Should be used sporadically.</p>
 
 </section>
               
-                <section class="main__item  item" id="mixin-sprite-map-create">
-
-<h3 class="item__heading">
-  
-
-  <a class="item__name" href="#mixin-sprite-map-create">sprite-map-create</a>
-
-  
-
-  
-</h3>
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-    
-  
-
-  
-
-  
-    
-  
-
-  
-
-  
-    
-  
-
-
-<div class="relative  clear  code--collapsed">
-  <pre class="item__code  item__code--togglable  language-scss"
-    data-current-state="collapsed"
-    data-expanded="@mixin sprite-map-create($name, $spacing: conf(spacing)) { 
-  $sprites-1x: _join((conf(dir), $name, conf(dir-png), &quot;*.png&quot;), &quot;/&quot;);
-  $sprites-2x: _join((conf(dir), $name, conf(dir-hidpi), &quot;*.png&quot;), &quot;/&quot;);
-
-  $map-1x: sprite-map($sprites-1x, $spacing: $spacing);
-  $map-2x: sprite-map($sprites-2x, $spacing: $spacing);
-
-  $new: ($name: (1x: $map-1x, 2x: $map-2x));
-  $icons-spritemaps: map-merge($icons-spritemaps, $new) !global;
-
-  @at-root %sprite-map-#{$name}-image-map {
-    background: {
-      image: $map-1x;
-      repeat: no-repeat;
-    }
-  }
-  @at-root %sprite-map-#{$name}-2x-image-map {
-    @include hidpi-mq {
-      background: {
-        image: $map-2x;
-        size: ceil(image-width(sprite-path($map-2x)) / conf(hidpi-scale)) auto;
-      }
-    }
-  }
- }"
-    data-collapsed="@mixin sprite-map-create($name, $spacing: conf(spacing)) { ... }"><code>@mixin sprite-map-create($name, $spacing: conf(spacing)) { ... }</code></pre>
-
-  
-    <a href="https://github.com/pascalduez/SassyIcons/tree/master/stylesheets/icons/_sprite-map-create.scss" class="item__source-link" target="_blank">View source</a>
-  
-</div>
-
-
-
-
-
-
-  
-
-  
-  
-    
-  
-
-  
-    
-    
-  <h3 class="item__sub-heading">Description</h3>
-
-  <div class="item__description"><p>Create a new spritemap from folder.</p>
-</div>
-
-
-  
-    
-    <h3 class="item__sub-heading">Parameters</h3>
-
-
-
-  <table class="item__parameters">
-    <thead>
-      <tr>
-        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
-        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
-        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
-        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-        <tr class="item__parameter">
-          <th scope="row" data-label="name"><code>$name</code></th>
-          <td data-label="desc"><p>spritemap name, which is also the folder name</p>
-</td>
-          <td data-label="type">
-          
-            String
-          
-          </td>
-          <td data-label="default">
-          
-            &mdash;<span class="visually-hidden"> none</span>
-          
-          </td>
-        </tr>
-      
-        <tr class="item__parameter">
-          <th scope="row" data-label="name"><code>$spacing</code></th>
-          <td data-label="desc"><p>Whether to add space around sprites in generated spritemap</p>
-</td>
-          <td data-label="type">
-          
-            Number
-          
-          </td>
-          <td data-label="default">
-          
-            <code>conf(spacing)</code>
-          
-          </td>
-        </tr>
-      
-    </tbody>
-  </table>
-
-
-
-  
-    
-    
-
-  
-    
-    
-  <h3 class="item__sub-heading">Example</h3>
-
-  
-  <div class="item__example  example">
-    
-    <div class="example__description"><p>Instantiate a new sprite map</p>
-</div>
-    
-    <pre class="example__code"><code class="language-scss">  @include sprite-map-create(social, $spacing: 30px);</code></pre>
-  </div>
-  
-
-
-  
-    
-    
-
-  
-    
-    
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-    
-      
-      <h3 class="item__sub-heading">Requires</h3>
-      <ul class="list-unstyled">
-    
-
-    
-      <li>
-        
-          <code>Compass::sprite-map</code>
-        
-        
-      </li>
-    
-  
-
-
-
-  
-    
-
-    
-      <li>
-        
-          <code>Compass::sprite-path</code>
-        
-        
-      </li>
-    
-  
-
-
-
-  
-    
-
-    
-      <li>
-        
-          <code>Compass::image-width</code>
-        
-        
-      </li>
-    
-  
-
-
-
-
-</ul>
-
-
-  
-    
-    
-
-
-
-
-
-  
-    
-    
-
-  
-    
-    
-
-
-
-
-  
-    
-    
-
-  
-    
-    
-  
-    
-    
-
-  
-
-
-
-</section>
-              
                 <section class="main__item  item" id="mixin-icon">
 
 <h3 class="item__heading">
@@ -2003,6 +1714,295 @@ default choice unless there are specific needs.</p>
 
 
 </ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-sprite-map-create">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-sprite-map-create">sprite-map-create</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin sprite-map-create($name, $spacing: conf(spacing)) { 
+  $sprites-1x: _join((conf(dir), $name, conf(dir-png), &quot;*.png&quot;), &quot;/&quot;);
+  $sprites-2x: _join((conf(dir), $name, conf(dir-hidpi), &quot;*.png&quot;), &quot;/&quot;);
+
+  $map-1x: sprite-map($sprites-1x, $spacing: $spacing);
+  $map-2x: sprite-map($sprites-2x, $spacing: $spacing);
+
+  $new: ($name: (1x: $map-1x, 2x: $map-2x));
+  $icons-spritemaps: map-merge($icons-spritemaps, $new) !global;
+
+  @at-root %sprite-map-#{$name}-image-map {
+    background: {
+      image: $map-1x;
+      repeat: no-repeat;
+    }
+  }
+  @at-root %sprite-map-#{$name}-2x-image-map {
+    @include hidpi-mq {
+      background: {
+        image: $map-2x;
+        size: ceil(image-width(sprite-path($map-2x)) / conf(hidpi-scale)) auto;
+      }
+    }
+  }
+ }"
+    data-collapsed="@mixin sprite-map-create($name, $spacing: conf(spacing)) { ... }"><code>@mixin sprite-map-create($name, $spacing: conf(spacing)) { ... }</code></pre>
+
+  
+    <a href="https://github.com/pascalduez/SassyIcons/tree/master/stylesheets/icons/_sprite-map-create.scss" class="item__source-link" target="_blank">View source</a>
+  
+</div>
+
+
+
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Create a new spritemap from folder.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$name</code></th>
+          <td data-label="desc"><p>spritemap name, which is also the folder name</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$spacing</code></th>
+          <td data-label="desc"><p>Whether to add space around sprites in generated spritemap</p>
+</td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            <code>conf(spacing)</code>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+  <h3 class="item__sub-heading">Example</h3>
+
+  
+  <div class="item__example  example">
+    
+    <div class="example__description"><p>Instantiate a new sprite map</p>
+</div>
+    
+    <pre class="example__code"><code class="language-scss">  @include sprite-map-create(social, $spacing: 30px);</code></pre>
+  </div>
+  
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li>
+        
+          <code>Compass::sprite-map</code>
+        
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li>
+        
+          <code>Compass::sprite-path</code>
+        
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li>
+        
+          <code>Compass::image-width</code>
+        
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+
+
 
 
   
